@@ -1,3 +1,9 @@
+// Simple user credentials for validation
+const validUsers = {
+  "admin@test.com": "admin123",
+  "demo@demo.com": "demo123",
+};
+
 // Queue class implementation
 class Queue {
   constructor() {
@@ -50,12 +56,6 @@ class Queue {
     this.items = this.items.filter(callback);
   }
 }
-
-// Simple user credentials for validation
-const validUsers = {
-  "admin@test.com": "admin123",
-  "demo@demo.com": "demo123",
-};
 
 // Rate limiting queue and variables
 let requestQueue = new Queue();
